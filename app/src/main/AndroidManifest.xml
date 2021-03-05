@@ -31,15 +31,20 @@
         </activity>
         <activity
             android:name=".NumbersActivity"
-            android:label="@string/category_numbers" />
+            android:label="@string/category_numbers"
+            android:parentActivityName=".MainActivity"
+            />
         <activity
             android:name=".FamilyActivity"
+            android:parentActivityName=".MainActivity"
             android:label="@string/category_family" />
         <activity
             android:name=".ColorsActivity"
+            android:parentActivityName=".MainActivity"
             android:label="@string/category_colors" />
         <activity
             android:name=".PhrasesActivity"
+            android:parentActivityName=".MainActivity"
             android:label="@string/category_phrases" />
     </application>
 

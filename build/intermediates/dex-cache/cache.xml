@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="D:\J\MiwokFromGit\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="27.0.3"
-        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_179ccb027c0d238fb93163969e3074c772f5fe2d.jar" />
-    </item>
-    <item
         jar="C:\Users\josef\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
         jumboMode="false"
         revision="27.0.3"
         sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
         <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_622e4948803e84bd7fb0cea774f866ca19cfc765.jar" />
+    </item>
+    <item
+        jar="D:\J\MiwokFromGit\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_179ccb027c0d238fb93163969e3074c772f5fe2d.jar" />
     </item>
     <item
         jar="D:\J\MiwokFromGit\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
