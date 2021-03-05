@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
+                // Create a new intent to open the {@link PrijemActivity}
+                Intent numbersIntent = new Intent(MainActivity.this, PrijemActivity.class);
 
                 // Start the new activity
                 startActivity(numbersIntent);
@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the family category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link FamilyActivity}
-                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
+                // Create a new intent to open the {@link VydejActivity}
+                Intent familyIntent = new Intent(MainActivity.this, VydejActivity.class);
 
                 // Start the new activity
                 startActivity(familyIntent);
@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the colors category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link ColorsActivity}
-                Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
+                // Create a new intent to open the {@link EvidenceActivity}
+                Intent colorsIntent = new Intent(MainActivity.this, EvidenceActivity.class);
 
                 // Start the new activity
                 startActivity(colorsIntent);
@@ -87,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the phrases category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link PhrasesActivity}
-                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                // Create a new intent to open the {@link NastaveniActivity}
+                Intent phrasesIntent = new Intent(MainActivity.this, NastaveniActivity.class);
 
                 // Start the new activity
                 startActivity(phrasesIntent);

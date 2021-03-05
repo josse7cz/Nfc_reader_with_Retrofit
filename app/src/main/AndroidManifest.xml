@@ -30,22 +30,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NumbersActivity"
-            android:label="@string/category_numbers"
+            android:name=".PrijemActivity"
+            android:label="@string/category_prijem"
             android:parentActivityName=".MainActivity"
             />
         <activity
-            android:name=".FamilyActivity"
+            android:name=".VydejActivity"
             android:parentActivityName=".MainActivity"
-            android:label="@string/category_family" />
+            android:label="@string/category_vydej" />
         <activity
-            android:name=".ColorsActivity"
+            android:name=".EvidenceActivity"
             android:parentActivityName=".MainActivity"
-            android:label="@string/category_colors" />
+            android:label="@string/category_evidence" />
         <activity
-            android:name=".PhrasesActivity"
+            android:name=".NastaveniActivity"
             android:parentActivityName=".MainActivity"
-            android:label="@string/category_phrases" />
+            android:label="@string/category_nastaveni" />
     </application>
 
 </manifest>
