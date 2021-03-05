@@ -13,20 +13,16 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.miwok.MainActivity"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
-
-
-
 <LinearLayout
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.example.android.miwok.MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/tan_background"
     android:orientation="vertical"
+    android:weightSum="4"
     >
     <TextView
         android:id="@+id/numbers"
@@ -53,4 +49,3 @@
         android:text="@string/category_nastaveni" />
 
 </LinearLayout>
-</ScrollView>

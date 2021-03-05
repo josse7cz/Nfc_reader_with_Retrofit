@@ -28,22 +28,22 @@ public class VydejActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        // Create a list of words
-        ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("father", "әpә", R.drawable.family_father));
-        words.add(new Word("mother", "әṭa", R.drawable.family_mother));
-        words.add(new Word("son", "angsi", R.drawable.family_son));
-        words.add(new Word("daughter", "tune", R.drawable.family_daughter));
-        words.add(new Word("older brother", "taachi", R.drawable.family_older_brother));
-        words.add(new Word("younger brother", "chalitti", R.drawable.family_younger_brother));
-        words.add(new Word("older sister", "teṭe", R.drawable.family_older_sister));
-        words.add(new Word("younger sister", "kolliti", R.drawable.family_younger_sister));
-        words.add(new Word("grandmother ", "ama", R.drawable.family_grandmother));
-        words.add(new Word("grandfather", "paapa", R.drawable.family_grandfather));
+        // Create a list of padaky
+        ArrayList<Padak> padaky = new ArrayList<Padak>();
+        padaky.add(new Padak("father", "әpә", R.drawable.family_father));
+        padaky.add(new Padak("mother", "әṭa", R.drawable.family_mother));
+        padaky.add(new Padak("son", "angsi", R.drawable.family_son));
+        padaky.add(new Padak("daughter", "tune", R.drawable.family_daughter));
+        padaky.add(new Padak("older brother", "taachi", R.drawable.family_older_brother));
+        padaky.add(new Padak("younger brother", "chalitti", R.drawable.family_younger_brother));
+        padaky.add(new Padak("older sister", "teṭe", R.drawable.family_older_sister));
+        padaky.add(new Padak("younger sister", "kolliti", R.drawable.family_younger_sister));
+        padaky.add(new Padak("grandmother ", "ama", R.drawable.family_grandmother));
+        padaky.add(new Padak("grandfather", "paapa", R.drawable.family_grandfather));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link WordAdapter}, whose data source is a list of {@link Padak}s. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter = new WordAdapter(this, words, R.color.category_family);
+        WordAdapter adapter = new WordAdapter(this, padaky, R.color.category_family);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
@@ -51,7 +51,7 @@ public class VydejActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // {@link ListView} will display list items for each {@link Padak} in the list.
         listView.setAdapter(adapter);
     }
 }

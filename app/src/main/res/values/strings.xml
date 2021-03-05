@@ -19,13 +19,13 @@
     <!-- Category name for phrases [CHAR LIMIT=20] -->
     <string name="category_nastaveni">Nastavení</string>
 
-    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <!-- Category name for the vocabulary padaky for colors [CHAR LIMIT=20] -->
     <string name="category_evidence">Evidence</string>
 
-    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <!-- Category name for the vocabulary padaky for numbers [CHAR LIMIT=20] -->
     <string name="category_vydej">Výdej padáků</string>
 
-    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <!-- Category name for the vocabulary padaky for family members [CHAR LIMIT=20] -->
     <string name="category_prijem">Příjem padáků</string>
 
 </resources>
