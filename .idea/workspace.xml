@@ -15,8 +15,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/EvidenceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/EvidenceActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +24,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_5_API_28]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -226,22 +226,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="176" y="174" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1614789506054" />
-    <state width="1491" height="180" key="GridCell.Tab.0.bottom" timestamp="1615059780854">
+    <state width="1491" height="153" key="GridCell.Tab.0.bottom" timestamp="1615061350055">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="180" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1615059780854" />
-    <state width="1491" height="180" key="GridCell.Tab.0.center" timestamp="1615059780854">
+    <state width="1491" height="153" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1615061350055" />
+    <state width="1491" height="153" key="GridCell.Tab.0.center" timestamp="1615061350054">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="180" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1615059780854" />
-    <state width="1491" height="180" key="GridCell.Tab.0.left" timestamp="1615059780854">
+    <state width="1491" height="153" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1615061350054" />
+    <state width="1491" height="153" key="GridCell.Tab.0.left" timestamp="1615061350053">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="180" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1615059780854" />
-    <state width="1491" height="180" key="GridCell.Tab.0.right" timestamp="1615059780854">
+    <state width="1491" height="153" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1615061350053" />
+    <state width="1491" height="153" key="GridCell.Tab.0.right" timestamp="1615061350054">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="180" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1615059780854" />
+    <state width="1491" height="153" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1615061350054" />
     <state width="1491" height="152" key="GridCell.Tab.1.bottom" timestamp="1615024116069">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
