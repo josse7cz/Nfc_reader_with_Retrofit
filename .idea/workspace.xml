@@ -16,13 +16,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/josef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/josef.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/MiwokFromGit.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/MiwokFromGit.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/EvidenceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/EvidenceActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/JsonPlaceHolderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/JsonPlaceHolderApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PostAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PostAdapter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,10 +212,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="484" y="19" key="#app/0.0.1536.864@0.0.1536.864" timestamp="1614947130021" />
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1614960709817">
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1615036619689">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1614960709817" />
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1615036619689" />
     <state x="288" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1614941726723">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -231,22 +236,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="176" y="174" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1614789506054" />
-    <state width="1491" height="221" key="GridCell.Tab.0.bottom" timestamp="1615024149602">
+    <state width="1491" height="180" key="GridCell.Tab.0.bottom" timestamp="1615057981925">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="221" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1615024149602" />
-    <state width="1491" height="221" key="GridCell.Tab.0.center" timestamp="1615024149601">
+    <state width="1491" height="180" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1615057981925" />
+    <state width="1491" height="180" key="GridCell.Tab.0.center" timestamp="1615057981925">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="221" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1615024149601" />
-    <state width="1491" height="221" key="GridCell.Tab.0.left" timestamp="1615024149600">
+    <state width="1491" height="180" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1615057981925" />
+    <state width="1491" height="180" key="GridCell.Tab.0.left" timestamp="1615057981924">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="221" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1615024149600" />
-    <state width="1491" height="221" key="GridCell.Tab.0.right" timestamp="1615024149601">
+    <state width="1491" height="180" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1615057981924" />
+    <state width="1491" height="180" key="GridCell.Tab.0.right" timestamp="1615057981925">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="221" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1615024149601" />
+    <state width="1491" height="180" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1615057981925" />
     <state width="1491" height="152" key="GridCell.Tab.1.bottom" timestamp="1615024116069">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

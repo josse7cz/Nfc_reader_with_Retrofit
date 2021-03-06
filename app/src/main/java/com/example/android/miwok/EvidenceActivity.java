@@ -19,17 +19,25 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import static android.widget.Toast.LENGTH_SHORT;
 
 public class EvidenceActivity extends AppCompatActivity {
 
@@ -39,35 +47,47 @@ public class EvidenceActivity extends AppCompatActivity {
 
 
     ArrayList<Post> mposts = new ArrayList<Post>();
-    ArrayList<Comment> mcomments=new ArrayList<Comment>();
+    ArrayList<Comment> mcomments = new ArrayList<Comment>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
-        textViewResult = (TextView) findViewById(R.id.tvHome);
+        //textViewResult = (TextView) findViewById(R.id.tvHome);
 
         // Create a list of padaky
 //        ArrayList<Padak> padaky = new ArrayList<Padak>();
 //       padaky.add(new Padak("black", "kululli", R.drawable.color_black));
 //        padaky.add(new Padak("white", "kelelli", R.drawable.color_white));
 
+
+        Gson gson = new GsonBuilder().serializeNulls().create();
+
+        HttpLoggingInterceptor loggingInterceptor=new HttpLoggingInterceptor();
+        loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().addInterceptor(loggingInterceptor).build();
+
         Retrofit retrofit = new Retrofit.Builder().baseUrl("https://jsonplaceholder.typicode.com/")
-                .addConverterFactory(GsonConverterFactory.create()).build();
+                .addConverterFactory(GsonConverterFactory.create(gson)).client(okHttpClient).build();
         jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
-        getPosts();
+        //getPosts(3 ,5);
        // getComments();
+       // createPost();
+        updatePost();
+       // deletePost();
 
 
     }
 
-    public void getPosts() {
+
+    public void getPosts(Integer x, Integer y) {
 //        Map<String, String> parameters = new HashMap<>();
 //        parameters.put("userId", "2");
 //        parameters.put("_sort", "id");
 //        parameters.put("_order", "desc");
+//        Call<List<Post>> call = jsonPlaceHolderApi.getPosts(parameters);
 
-        Call<List<Post>> call = jsonPlaceHolderApi.getPosts(new Integer[]{1,2},"id","asc");
+        Call<List<Post>> call = jsonPlaceHolderApi.getPosts(new Integer[]{x, y}, "id", "asc");
         call.enqueue(new Callback<List<Post>>() {
             @Override
             public void onResponse(Call<List<Post>> call, Response<List<Post>> response) {
@@ -104,9 +124,11 @@ public class EvidenceActivity extends AppCompatActivity {
             }
         });
     }
+
     private void getComments() {
         Call<List<Comment>> call = jsonPlaceHolderApi
-                .getComments("https://jsonplaceholder.typicode.com/posts/3/comments");
+                .getComments("https://jsonplaceholder.typicode.com/posts/1/comments");
+
         call.enqueue(new Callback<List<Comment>>() {
             @Override
             public void onResponse(Call<List<Comment>> call, Response<List<Comment>> response) {
@@ -127,15 +149,98 @@ public class EvidenceActivity extends AppCompatActivity {
                 }
 
                 //Create the adapter to convert the array to views
-                //Comment commentAdapter = new CommentAdapter(EvidenceActivity.this, mcomments);
-                CommentAdapter c = new CommentAdapter(EvidenceActivity.this,mcomments);
+                CommentAdapter c = new CommentAdapter(EvidenceActivity.this, mcomments);
                 // Attach the adapter to a ListView
                 ListView listView = (ListView) findViewById(R.id.list);
                 listView.setAdapter(c);
             }
+
             @Override
             public void onFailure(Call<List<Comment>> call, Throwable t) {
                 textViewResult.setText(t.getMessage());
+            }
+        });
+    }
+
+    private void createPost() {
+
+        Map<String, String> parameters = new HashMap<>();
+        parameters.put("userId", "1");
+        parameters.put("title", "Something to eat");
+        parameters.put("body", "Nothing");
+
+
+       // Post post = new Post(11, "How to make", "It is easy");
+        Call<Post> call = jsonPlaceHolderApi.createPost(parameters);
+        call.enqueue(new Callback<Post>() {
+            @Override
+            public void onResponse(Call<Post> call, Response<Post> response) {
+                if (!response.isSuccessful()) {
+                    //textViewResult.setText("Code" + response.code());
+                    Toast.makeText(EvidenceActivity.this, "Error Code: "+response.code(), LENGTH_SHORT).show();
+                    return;
+                }
+                Post postResponse = response.body();
+                String content = "";
+                content += "Code: " + response.code() + "\n";
+                content += "ID: " + postResponse.getId() + "\n";
+                content += "userID: " + postResponse.getUserId() + "\n";
+                content += "title: " + postResponse.getTitle() + "\n";
+                content += "text: " + postResponse.getText() + "\n\n";
+                //textViewResult.setText(content);
+                Toast.makeText(EvidenceActivity.this,"Created:"+content,Toast.LENGTH_LONG).show();
+                getPosts(null,null);
+
+            }
+
+            @Override
+            public void onFailure(Call<Post> call, Throwable t) {
+                textViewResult.setText(t.getMessage());
+            }
+        });
+    }
+    private void updatePost() {
+        Post post = new Post(12, null, "New Text nejaky brutální text");
+        Call<Post> call = jsonPlaceHolderApi.putPost(5, post);
+        call.enqueue(new Callback<Post>() {
+            @Override
+            public void onResponse(Call<Post> call, Response<Post> response) {
+                if (!response.isSuccessful()) {
+                    //textViewResult.setText("Code: " + response.code());
+                    Toast.makeText(EvidenceActivity.this, "Update, Code: "+response.code(), LENGTH_SHORT).show();
+                    return;
+                }
+                Post postResponse = response.body();
+                String content = "";
+                content += "Code: " + response.code() + "\n";
+                content += "ID: " + postResponse.getId() + "\n";
+                content += "User ID: " + postResponse.getUserId() + "\n";
+                content += "Title: " + postResponse.getTitle() + "\n";
+                content += "Text: " + postResponse.getText() + "\n\n";
+                //textViewResult.setText(content);
+                getPosts(null,null);
+                Toast.makeText(EvidenceActivity.this, "updated: "+response.code(), Toast.LENGTH_LONG).show();
+            }
+            @Override
+            public void onFailure(Call<Post> call, Throwable t) {
+                textViewResult.setText(t.getMessage());
+                Toast.makeText(EvidenceActivity.this, "Fail: "+t.getMessage(), LENGTH_SHORT).show();
+            }
+        });
+    }
+    private void deletePost() {
+        Call<Void> call = jsonPlaceHolderApi.deletePost(5);
+        call.enqueue(new Callback<Void>() {
+            @Override
+            public void onResponse(Call<Void> call, Response<Void> response) {
+               // textViewResult.setText("Code: " + response.code());
+                Toast.makeText(EvidenceActivity.this, "Code: "+response.code(), LENGTH_SHORT).show();
+                getPosts(null,null);
+            }
+            @Override
+            public void onFailure(Call<Void> call, Throwable t) {
+                //textViewResult.setText(t.getMessage());
+                Toast.makeText(EvidenceActivity.this, "Code: "+t.getMessage(), LENGTH_SHORT).show();
             }
         });
     }

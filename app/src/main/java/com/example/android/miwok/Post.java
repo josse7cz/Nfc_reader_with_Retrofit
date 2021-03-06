@@ -3,19 +3,24 @@ package com.example.android.miwok;
 import com.google.gson.annotations.SerializedName;
 
 public class Post {
-    private String userId;
+    private Integer userId;
 
-    private String id;
+    private Integer id;
     private String title;
     @SerializedName("body")
     private String text;
 
+    public Post(Integer userId, String title, String text) {
+        this.userId = userId;
+        this.title = title;
+        this.text = text;
+    }
 
-    public String getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
