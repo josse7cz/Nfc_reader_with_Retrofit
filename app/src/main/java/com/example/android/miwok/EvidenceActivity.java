@@ -67,13 +67,13 @@ public class EvidenceActivity extends AppCompatActivity {
         loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient okHttpClient = new OkHttpClient.Builder().addInterceptor(loggingInterceptor).build();
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://mockend.com/www.github.com/josse7cz/miwokfromgit/")//("https://jsonplaceholder.typicode.com/")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://github.com/josse7cz/MiwokFromGit/blob/main/.mockend.json/")//("https://jsonplaceholder.typicode.com/")
                 .addConverterFactory(GsonConverterFactory.create(gson)).client(okHttpClient).build();
         jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
-        //getPosts(3 ,5);
+        getPosts(null ,null);
        // getComments();
        // createPost();
-        updatePost();
+      //  updatePost();
        // deletePost();
 
 
