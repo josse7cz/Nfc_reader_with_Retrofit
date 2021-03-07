@@ -17,6 +17,7 @@
     package="com.example.android.miwok">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NFC"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,8 +27,11 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+                <!--                dva radky nize pridany z videa-->
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <action android:name="android.intent.category.DEFAULT"/>
+
             </intent-filter>
         </activity>
         <activity
@@ -38,7 +42,8 @@
         <activity
             android:name=".VydejActivity"
             android:parentActivityName=".MainActivity"
-            android:label="@string/category_vydej" />
+            android:label="@string/category_vydej"
+            />
         <activity
             android:name=".EvidenceActivity"
             android:parentActivityName=".MainActivity"
