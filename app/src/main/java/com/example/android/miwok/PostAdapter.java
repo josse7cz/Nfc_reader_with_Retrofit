@@ -1,7 +1,6 @@
 package com.example.android.miwok;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,10 +17,6 @@ public class PostAdapter extends ArrayAdapter<Post> {
         super(context, 0, posts);
     }
 
-
-
-
-
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Get the data item for this position
@@ -37,11 +32,11 @@ public class PostAdapter extends ArrayAdapter<Post> {
         TextView tvTitle1 = (TextView) convertView.findViewById(R.id.tvHome1);
 
         // Populate the data into the template view using the data object
-        tvId.setText("id: "+post.getId());
-        tvId1.setText("userId: "+post.getUserId());
-        tvTitle.setText("title: "+post.getTitle());
-            tvTitle1.setText(post.getText());
-       // Log.v(TAG, "pozdarve adapteru" + post.getTitle().toString());
+        tvId.setText("id: " + post.getId());
+        tvId1.setText("userId: " + post.getUserId());
+        tvTitle.setText("title: " + post.getTitle());
+        tvTitle1.setText(post.getText());
+        // Log.v(TAG, "pozdarve adapteru" + post.getTitle().toString());
         // Return the completed view to render on screen
         return convertView;
     }
