@@ -38,15 +38,20 @@ import android.widget.Toast;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
+/**
+ * třída pro načítání a zápis NFC
+ */
 public class VydejActivity extends AppCompatActivity {
     public static final String Error_Detected = "No NFC Tag Detected";
     public static final String Write_Success = "Text written successfully!";
     public static final String Write_Error = "Error during writing try again";
+    private static final String TAG = "MyActivity";
+
     NfcAdapter nfcAdapter;
     PendingIntent pendingIntent;
-    IntentFilter writeTagFilters [];
+    IntentFilter writeTagFilters[];
     boolean writeBol;
-    Tag myTag;
+    Tag myTag;//poslouzi pro zjisteni daneho cip
     Context context;
     TextView edit_message;
     TextView nfc_contents;
@@ -68,7 +73,7 @@ public class VydejActivity extends AppCompatActivity {
                     if (myTag == null) {
                         Toast.makeText(context, "Error_Detected", Toast.LENGTH_LONG).show();
                     } else {
-                        write("PlainText" + edit_message.getText().toString(), myTag);
+                        write("&:" + edit_message.getText().toString(), myTag);
                         Toast.makeText(context, "Write_Success", Toast.LENGTH_LONG).show();
                     }
                 } catch (IOException e) {
@@ -80,20 +85,34 @@ public class VydejActivity extends AppCompatActivity {
                 }
             }
         });
-        nfcAdapter = NfcAdapter.getDefaultAdapter(this);
+
+        /**
+         * zjisteni zda zarizeni podporuje NFC
+         */
+        nfcAdapter = NfcAdapter.getDefaultAdapter(context);
+
+
+        if (!nfcAdapter.isEnabled()) {
+            Toast.makeText(context, "This device not enable NFC", Toast.LENGTH_LONG).show();
+            finish();
+        }
+
         if (nfcAdapter == null) {
             Toast.makeText(context, "This device not supported NFC", Toast.LENGTH_LONG).show();
             finish();
         }
+
+
         readfromIntent(getIntent());
         pendingIntent = PendingIntent.getActivity(this, 0, new Intent(this, getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
         IntentFilter tagDetected = new IntentFilter(NfcAdapter.ACTION_TAG_DISCOVERED);
         tagDetected.addCategory(Intent.CATEGORY_DEFAULT);
-        writeTagFilters= new IntentFilter[]{tagDetected};
+        writeTagFilters = new IntentFilter[]{tagDetected};
 
     }
 
     public void readfromIntent(Intent intent) {
+
         String action = intent.getAction();
         if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(action) || NfcAdapter.ACTION_TECH_DISCOVERED.equals(action)
                 || NfcAdapter.ACTION_NDEF_DISCOVERED.equals(action)) {
@@ -125,7 +144,7 @@ public class VydejActivity extends AppCompatActivity {
             Log.e("UnsupportedEncoding", e.toString());
             e.printStackTrace();
         }
-        nfc_contents.setText("NFC Content: " + text);
+        nfc_contents.setText("Váš text: " + text);
     }
 
     @SuppressLint("MissingPermission")
@@ -161,13 +180,18 @@ public class VydejActivity extends AppCompatActivity {
         return recordNfc;
     }
 
+
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
         readfromIntent(intent);
-        if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())) {
+        if (!intent.hasExtra(NfcAdapter.EXTRA_TAG)) {//Jestliže chceme v této metodě zpracovávat pouze NFC záměr
+            return;
+        } else if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())) {
             myTag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+
+
         }
     }
 
@@ -176,19 +200,22 @@ public class VydejActivity extends AppCompatActivity {
         super.onPause();
         WriteModeOff();
     }
+
     @Override
     public void onResume() {
         super.onResume();
         WriteModeOn();
     }
+
     @SuppressLint("MissingPermission")
-    private void WriteModeOn(){
-        writeBol=true;
-        nfcAdapter.enableForegroundDispatch(this,pendingIntent,writeTagFilters,null);
+    private void WriteModeOn() {
+        writeBol = true;
+        nfcAdapter.enableForegroundDispatch(this, pendingIntent, writeTagFilters, null);
     }
+
     @SuppressLint("MissingPermission")
-    private void WriteModeOff(){
-        writeBol=false;
+    private void WriteModeOff() {
+        writeBol = false;
         nfcAdapter.disableForegroundDispatch(this);
     }
 

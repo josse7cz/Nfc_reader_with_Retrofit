@@ -7,17 +7,19 @@
         android:id="@+id/ActivateButton"
         android:layout_width="match_parent"
         android:layout_height="78dp"
-        android:text="Button" />
+        android:text="Zapsat text" />
 
-    <TextView
+    <EditText
         android:id="@+id/editNFC"
         android:layout_width="match_parent"
         android:layout_height="58dp"
-        android:text="editNFC" />
+        android:text="Zde zadejte text."
+        />
 
     <TextView
         android:id="@+id/readNFC"
         android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:text="readNFC" />
+        android:layout_height="58dp"
+        android:textSize="28dp"
+        android:text="" />
 </LinearLayout>

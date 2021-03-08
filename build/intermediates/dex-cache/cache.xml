@@ -1,3 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\josef\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.15.0\bc28b5a964c8f5721eb58ee3f3c47a9bcbf4f4d8\okio-1.15.0.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="bc28b5a964c8f5721eb58ee3f3c47a9bcbf4f4d8">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\okio-1.15.0_07af4156665cc2320d3a9ce6d2e8001c1e4d1d52.jar" />
+    </item>
+    <item
+        jar="C:\Users\josef\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\logging-interceptor\3.12.1\f0304756a8d9f745fd7de3f82a32090cf5b71166\logging-interceptor-3.12.1.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="f0304756a8d9f745fd7de3f82a32090cf5b71166">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\logging-interceptor-3.12.1_850aba38bb3fe05c559936fd30fa4e2e4657d63f.jar" />
+    </item>
+    <item
+        jar="D:\J\MiwokFromGit\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.3.0_10e14edda8128e065d6048155f48fb30e38ffc1c.jar" />
+    </item>
+    <item
+        jar="D:\J\MiwokFromGit\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.3.0_bda7c5aaebeb96a012f4b7474daf9e01ed3c3491.jar" />
+    </item>
+    <item
+        jar="C:\Users\josef\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.12.1\dc6d02e4e68514eff5631963e28ca7742ac69efe\okhttp-3.12.1.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="dc6d02e4e68514eff5631963e28ca7742ac69efe">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\okhttp-3.12.1_8d041b4c4dca84d025e09f8427b219b64877fb81.jar" />
+    </item>
+    <item
+        jar="C:\Users\josef\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\converter-gson-2.1.0_0f4396a3c1c0fd06035f16c7bee560a349c1d030.jar" />
+    </item>
+    <item
+        jar="D:\J\MiwokFromGit\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_179ccb027c0d238fb93163969e3074c772f5fe2d.jar" />
+    </item>
+    <item
+        jar="C:\Users\josef\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_622e4948803e84bd7fb0cea774f866ca19cfc765.jar" />
+    </item>
+    <item
+        jar="D:\J\MiwokFromGit\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.3.0_7c3465be68ba907a5666b1781ec12c38e92631e0.jar" />
+    </item>
+    <item
+        jar="C:\Users\josef\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\gson-2.7_e95f182cfe5d3e339e24a8d9452084db3dba9276.jar" />
+    </item>
+    <item
+        jar="D:\J\MiwokFromGit\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.3.0_9b275df1d6d4b912dd800b43a4649458aee0d6de.jar" />
+    </item>
+    <item
+        jar="D:\J\MiwokFromGit\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_f1ea1373b826f9c7127cd9e897c0ff56db8756ec.jar" />
+    </item>
+    <item
+        jar="C:\Users\josef\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.5.0\713ce36037bf24a76a3974c05cb85c3f754b1cc3\retrofit-2.5.0.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="713ce36037bf24a76a3974c05cb85c3f754b1cc3">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\retrofit-2.5.0_07969f618e7716ca66cb93589d2f3dd025168e9a.jar" />
+    </item>
+    <item
+        jar="D:\J\MiwokFromGit\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="D:\J\MiwokFromGit\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.3.0_896a0ee01793832ab256679e2e97bb96c91f0416.jar" />
+    </item>
+
+</items>

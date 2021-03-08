@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2016 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,9 +14,14 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.miwok">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
 
 
     <application
@@ -30,30 +34,33 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-                <!--                dva radky nize pridany z videa-->
-                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
-                <action android:name="android.intent.category.DEFAULT"/>
+                <!--                radky nize k filtrovani obsahu NFC-->
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <action android:name="android.intent.category.DEFAULT" />
+
+                <meta-data
+                    android:name="android.nfc.action.TECH_DISCOVERED"
+                    android:resource="@xml/nfc_tech_filter" />
+                <data android:mimeType="text/plain" />
 
             </intent-filter>
         </activity>
         <activity
             android:name=".PrijemActivity"
             android:label="@string/category_prijem"
-            android:parentActivityName=".MainActivity"
-            />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".VydejActivity"
-            android:parentActivityName=".MainActivity"
             android:label="@string/category_vydej"
-            />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".EvidenceActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/category_evidence" />
+            android:label="@string/category_evidence"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".NastaveniActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/category_nastaveni" />
+            android:label="@string/category_nastaveni"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
