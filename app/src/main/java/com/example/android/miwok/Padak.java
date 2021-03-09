@@ -11,6 +11,9 @@ public class Padak {
     public Padak(Integer evC, String typ) {
         this.evC = evC;
         this.typ = typ;
+    }
+    public Padak(Integer evC) {
+        this.evC = evC;
 
     }
 

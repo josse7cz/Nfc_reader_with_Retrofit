@@ -33,6 +33,7 @@ public class NastaveniActivity extends AppCompatActivity {
         // Create a list of padaky
 
       ArrayList<Padak> padaky = new ArrayList<Padak>();
+        padaky.add(new Padak(123));
       padaky.add(new Padak(123,"ovp80"));
       padaky.add(new Padak(124,"ovp80"));
       padaky.add(new Padak(125,"ovp80"));

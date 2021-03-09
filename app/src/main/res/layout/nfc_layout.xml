@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_nfc_container"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/text_nfc_container">
+    >
 
     <EditText
         android:id="@+id/editNFC"
@@ -35,26 +36,4 @@
         android:layout_width="match_parent"
         android:layout_height="78dp"
         android:text="Zapsat text" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:id="@+id/container_nfc_layout">
-
-        <TextView
-            android:id="@+id/cislo_padaku"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/evidencni_cislo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-    </LinearLayout>
-
-
 </LinearLayout>
