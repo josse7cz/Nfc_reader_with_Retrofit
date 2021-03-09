@@ -37,6 +37,7 @@ import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 
 /**
  * třída pro načítání a zápis NFC
@@ -56,6 +57,8 @@ public class PrijemActivity extends AppCompatActivity {
     TextView edit_message;
     TextView nfc_contents;
     Button activateButton;
+    ArrayList<String> prehledA = new ArrayList<String>();
+    private TextView textViewResult;
 
     @Override
 
@@ -73,7 +76,7 @@ public class PrijemActivity extends AppCompatActivity {
                     if (myTag == null) {
                         Toast.makeText(context, "Error_Detected", Toast.LENGTH_LONG).show();
                     } else {
-                        write("&:" + edit_message.getText().toString(), myTag);
+                        write("" + edit_message.getText().toString(), myTag);
                         Toast.makeText(context, "Write_Success", Toast.LENGTH_LONG).show();
                     }
                 } catch (IOException e) {
@@ -93,7 +96,7 @@ public class PrijemActivity extends AppCompatActivity {
 
 
         if (!nfcAdapter.isEnabled()) {
-            Toast.makeText(context, "You should be enable NFC", Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "This device not enable NFC", Toast.LENGTH_LONG).show();
             finish();
         }
 
@@ -145,6 +148,7 @@ public class PrijemActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         nfc_contents.setText("Váš text: " + text);
+
     }
 
     @SuppressLint("MissingPermission")
@@ -193,6 +197,8 @@ public class PrijemActivity extends AppCompatActivity {
 
 
         }
+
+
     }
 
     @Override
@@ -218,6 +224,7 @@ public class PrijemActivity extends AppCompatActivity {
         writeBol = false;
         nfcAdapter.disableForegroundDispatch(this);
     }
+
 
 }
 

@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_nfc_container"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/ActivateButton"
-        android:layout_width="match_parent"
-        android:layout_height="78dp"
-        android:text="Zapsat text" />
+    android:layout_height="match_parent"
+    >
 
     <EditText
         android:id="@+id/editNFC"
@@ -16,10 +12,28 @@
         android:text="Zde zadejte text."
         />
 
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="zabaleno" />
+
     <TextView
         android:id="@+id/readNFC"
         android:layout_width="match_parent"
         android:layout_height="58dp"
         android:textSize="28dp"
         android:text="" />
+
+    <Button
+        android:id="@+id/ActivateButton"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:text="Zapsat text" />
 </LinearLayout>

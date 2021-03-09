@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MiwokFromGit.iml" filepath="$PROJECT_DIR$/.idea/modules/MiwokFromGit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MiwokFromGit.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MiwokFromGit.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nfc_reader_with_Retrofit.iml" filepath="$PROJECT_DIR$/.idea/modules/Nfc_reader_with_Retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Nfc_reader_with_Retrofit.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Nfc_reader_with_Retrofit.app.iml" />
     </modules>
   </component>
 </project>

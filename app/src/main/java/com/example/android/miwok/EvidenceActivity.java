@@ -47,7 +47,6 @@ public class EvidenceActivity extends AppCompatActivity {
 
 
     ArrayList<Post> mposts = new ArrayList<Post>();
-    ArrayList<Comment> mcomments = new ArrayList<Comment>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,30 +54,21 @@ public class EvidenceActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
         //textViewResult = (TextView) findViewById(R.id.tvHome);
 
-        // Create a list of padaky
-//        ArrayList<Transl> padaky = new ArrayList<Transl>();
-//       padaky.add(new Transl("black", "kululli", R.drawable.color_black));
-//        padaky.add(new Transl("white", "kelelli", R.drawable.color_white));
-
 
         Gson gson = new GsonBuilder().serializeNulls().create();
 
-        HttpLoggingInterceptor loggingInterceptor=new HttpLoggingInterceptor();
+        HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
         loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient okHttpClient = new OkHttpClient.Builder().addInterceptor(loggingInterceptor).build();
 
         Retrofit retrofit = new Retrofit.Builder().baseUrl("https://my-json-server.typicode.com/josse7cz/demo/")//("https://jsonplaceholder.typicode.com/")
                 .addConverterFactory(GsonConverterFactory.create(gson)).client(okHttpClient).build();
         jsonApiInterFace = retrofit.create(JsonApiInterFace.class);
-       getPosts(null ,null);
-       // getComments();
-       // createPost();
-       //updatePost();
-       // deletePost();
-
-
+        getPosts(null, null);
+        // createPost();
+        //updatePost();
+        // deletePost();
     }
-
 
     public void getPosts(Integer x, Integer y) {
 //        Map<String, String> parameters = new HashMap<>();
@@ -125,43 +115,6 @@ public class EvidenceActivity extends AppCompatActivity {
         });
     }
 
-    private void getComments() {
-        Call<List<Comment>> call = jsonApiInterFace
-                .getComments("https://jsonplaceholder.typicode.com/posts/1/comments");
-
-        call.enqueue(new Callback<List<Comment>>() {
-            @Override
-            public void onResponse(Call<List<Comment>> call, Response<List<Comment>> response) {
-                if (!response.isSuccessful()) {
-                    textViewResult.setText("Code: " + response.code());
-                    return;
-                }
-                List<Comment> comments = response.body();
-                for (Comment comment : comments) {
-                    String content = "";
-                    content += "ID: " + comment.getId() + "\n";
-                    content += "Post ID: " + comment.getPostId() + "\n";
-                    content += "Name: " + comment.getName() + "\n";
-                    content += "Email: " + comment.getEmail() + "\n";
-                    content += "Text: " + comment.getText() + "\n\n";
-                    //textViewResult.append(content);
-                    mcomments.add(comment);
-                }
-
-                //Create the adapter to convert the array to views
-                CommentAdapter c = new CommentAdapter(EvidenceActivity.this, mcomments);
-                // Attach the adapter to a ListView
-                ListView listView = (ListView) findViewById(R.id.list);
-                listView.setAdapter(c);
-            }
-
-            @Override
-            public void onFailure(Call<List<Comment>> call, Throwable t) {
-                textViewResult.setText(t.getMessage());
-            }
-        });
-    }
-
     private void createPost() {
 
         Map<String, String> parameters = new HashMap<>();
@@ -170,14 +123,14 @@ public class EvidenceActivity extends AppCompatActivity {
         parameters.put("body", "Nothing");
 
 
-       // Post post = new Post(11, "How to make", "It is easy");
+        // Post post = new Post(11, "How to make", "It is easy");
         Call<Post> call = jsonApiInterFace.createPost(parameters);
         call.enqueue(new Callback<Post>() {
             @Override
             public void onResponse(Call<Post> call, Response<Post> response) {
                 if (!response.isSuccessful()) {
                     //textViewResult.setText("Code" + response.code());
-                    Toast.makeText(EvidenceActivity.this, "Error Code: "+response.code(), LENGTH_SHORT).show();
+                    Toast.makeText(EvidenceActivity.this, "Error Code: " + response.code(), LENGTH_SHORT).show();
                     return;
                 }
                 Post postResponse = response.body();
@@ -188,8 +141,8 @@ public class EvidenceActivity extends AppCompatActivity {
                 content += "title: " + postResponse.getTitle() + "\n";
                 content += "text: " + postResponse.getText() + "\n\n";
                 //textViewResult.setText(content);
-                Toast.makeText(EvidenceActivity.this,"Created:"+content,Toast.LENGTH_LONG).show();
-                getPosts(null,null);
+                Toast.makeText(EvidenceActivity.this, "Created:" + content, Toast.LENGTH_LONG).show();
+                getPosts(null, null);
 
             }
 
@@ -199,6 +152,7 @@ public class EvidenceActivity extends AppCompatActivity {
             }
         });
     }
+
     private void updatePost() {
         Post post = new Post(1, null, "New Text nejaky brutální text");
         Call<Post> call = jsonApiInterFace.putPost(5, post);
@@ -207,7 +161,7 @@ public class EvidenceActivity extends AppCompatActivity {
             public void onResponse(Call<Post> call, Response<Post> response) {
                 if (!response.isSuccessful()) {
                     //textViewResult.setText("Code: " + response.code());
-                    Toast.makeText(EvidenceActivity.this, "Update, Code: "+response.code(), LENGTH_SHORT).show();
+                    Toast.makeText(EvidenceActivity.this, "Update, Code: " + response.code(), LENGTH_SHORT).show();
                     return;
                 }
                 Post postResponse = response.body();
@@ -218,36 +172,35 @@ public class EvidenceActivity extends AppCompatActivity {
                 content += "Title: " + postResponse.getTitle() + "\n";
                 content += "Text: " + postResponse.getText() + "\n\n";
                 //textViewResult.setText(content);
-                getPosts(null,null);
-                Toast.makeText(EvidenceActivity.this, "updated: "+response.code(), Toast.LENGTH_LONG).show();
+                getPosts(null, null);
+                Toast.makeText(EvidenceActivity.this, "updated: " + response.code(), Toast.LENGTH_LONG).show();
             }
+
             @Override
             public void onFailure(Call<Post> call, Throwable t) {
                 textViewResult.setText(t.getMessage());
-                Toast.makeText(EvidenceActivity.this, "Fail: "+t.getMessage(), LENGTH_SHORT).show();
+                Toast.makeText(EvidenceActivity.this, "Fail: " + t.getMessage(), LENGTH_SHORT).show();
             }
         });
     }
+
     private void deletePost() {
         Call<Void> call = jsonApiInterFace.deletePost(1);
         call.enqueue(new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
-               // textViewResult.setText("Code: " + response.code());
-                Toast.makeText(EvidenceActivity.this, "Code: "+response.code(), LENGTH_SHORT).show();
-                getPosts(null,null);
+                // textViewResult.setText("Code: " + response.code());
+                Toast.makeText(EvidenceActivity.this, "Code: " + response.code(), LENGTH_SHORT).show();
+                getPosts(null, null);
             }
+
             @Override
             public void onFailure(Call<Void> call, Throwable t) {
                 //textViewResult.setText(t.getMessage());
-                Toast.makeText(EvidenceActivity.this, "Code: "+t.getMessage(), LENGTH_SHORT).show();
+                Toast.makeText(EvidenceActivity.this, "Code: " + t.getMessage(), LENGTH_SHORT).show();
             }
         });
     }
 
 }
 
-//                Log.v(TAG, "ZDAAAR" + mposts.get(0).getText());
-//                Log.v(TAG, "ZDAAAR" + mposts.get(25).getTitle());
-//                Log.v(TAG, "ZDAAAR" + mposts.size());
-// Log.v(TAG, "ZDAAAR" + mmposts.get(2));
