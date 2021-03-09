@@ -223,19 +223,19 @@ public class PrijemActivity extends AppCompatActivity {
 
 
 //        // Create a list of padaky
-//        ArrayList<Padak> padaky = new ArrayList<Padak>();
-//        padaky.add(new Padak("father", "әpә", R.drawable.family_father));
-//        padaky.add(new Padak("mother", "әṭa", R.drawable.family_mother));
-//        padaky.add(new Padak("son", "angsi", R.drawable.family_son));
-//        padaky.add(new Padak("daughter", "tune", R.drawable.family_daughter));
-//        padaky.add(new Padak("older brother", "taachi", R.drawable.family_older_brother));
-//        padaky.add(new Padak("younger brother", "chalitti", R.drawable.family_younger_brother));
-//        padaky.add(new Padak("older sister", "teṭe", R.drawable.family_older_sister));
-//        padaky.add(new Padak("younger sister", "kolliti", R.drawable.family_younger_sister));
-//        padaky.add(new Padak("grandmother ", "ama", R.drawable.family_grandmother));
-//        padaky.add(new Padak("grandfather", "paapa", R.drawable.family_grandfather));
+//        ArrayList<Transl> padaky = new ArrayList<Transl>();
+//        padaky.add(new Transl("father", "әpә", R.drawable.family_father));
+//        padaky.add(new Transl("mother", "әṭa", R.drawable.family_mother));
+//        padaky.add(new Transl("son", "angsi", R.drawable.family_son));
+//        padaky.add(new Transl("daughter", "tune", R.drawable.family_daughter));
+//        padaky.add(new Transl("older brother", "taachi", R.drawable.family_older_brother));
+//        padaky.add(new Transl("younger brother", "chalitti", R.drawable.family_younger_brother));
+//        padaky.add(new Transl("older sister", "teṭe", R.drawable.family_older_sister));
+//        padaky.add(new Transl("younger sister", "kolliti", R.drawable.family_younger_sister));
+//        padaky.add(new Transl("grandmother ", "ama", R.drawable.family_grandmother));
+//        padaky.add(new Transl("grandfather", "paapa", R.drawable.family_grandfather));
 //
-//        // Create an {@link WordAdapter}, whose data source is a list of {@link Padak}s. The
+//        // Create an {@link WordAdapter}, whose data source is a list of {@link Transl}s. The
 //        // adapter knows how to create list items for each item in the list.
 //        WordAdapter adapter = new WordAdapter(this, padaky, R.color.category_family);
 //
@@ -245,5 +245,5 @@ public class PrijemActivity extends AppCompatActivity {
 //        ListView listView = (ListView) findViewById(R.id.list);
 //
 //        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-//        // {@link ListView} will display list items for each {@link Padak} in the list.
+//        // {@link ListView} will display list items for each {@link Transl} in the list.
 //        listView.setAdapter(adapter);

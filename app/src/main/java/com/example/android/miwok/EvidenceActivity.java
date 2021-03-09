@@ -56,9 +56,9 @@ public class EvidenceActivity extends AppCompatActivity {
         //textViewResult = (TextView) findViewById(R.id.tvHome);
 
         // Create a list of padaky
-//        ArrayList<Padak> padaky = new ArrayList<Padak>();
-//       padaky.add(new Padak("black", "kululli", R.drawable.color_black));
-//        padaky.add(new Padak("white", "kelelli", R.drawable.color_white));
+//        ArrayList<Transl> padaky = new ArrayList<Transl>();
+//       padaky.add(new Transl("black", "kululli", R.drawable.color_black));
+//        padaky.add(new Transl("white", "kelelli", R.drawable.color_white));
 
 
         Gson gson = new GsonBuilder().serializeNulls().create();

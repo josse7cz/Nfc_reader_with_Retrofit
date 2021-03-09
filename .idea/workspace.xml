@@ -18,10 +18,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/EvidenceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/EvidenceActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/JsonPlaceHolderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/JsonApiInterFace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/NastaveniActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/NastaveniActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/Padak.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/Transl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PrijemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PrijemActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/VydejActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/VydejActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/WordAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/WordAdapter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,10 +217,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1615036619689" />
-    <state x="60" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615283614262">
+    <state x="60" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615286635472">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="60" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1615283614262" />
+    <state x="60" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1615286635472" />
     <state x="499" y="179" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1614973893746">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -239,22 +241,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="176" y="174" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1615186927497" />
-    <state width="1491" height="316" key="GridCell.Tab.0.bottom" timestamp="1615188094550">
+    <state width="760" height="229" key="GridCell.Tab.0.bottom" timestamp="1615286978213">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="316" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1615188094550" />
-    <state width="1491" height="316" key="GridCell.Tab.0.center" timestamp="1615188094549">
+    <state width="760" height="229" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1615286978213" />
+    <state width="760" height="229" key="GridCell.Tab.0.center" timestamp="1615286978212">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="316" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1615188094549" />
-    <state width="1491" height="316" key="GridCell.Tab.0.left" timestamp="1615188094549">
+    <state width="760" height="229" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1615286978212" />
+    <state width="760" height="229" key="GridCell.Tab.0.left" timestamp="1615286978212">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="316" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1615188094549" />
-    <state width="1491" height="316" key="GridCell.Tab.0.right" timestamp="1615188094550">
+    <state width="760" height="229" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1615286978212" />
+    <state width="760" height="229" key="GridCell.Tab.0.right" timestamp="1615286978213">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="316" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1615188094550" />
+    <state width="760" height="229" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1615286978213" />
     <state width="1491" height="152" key="GridCell.Tab.1.bottom" timestamp="1615024116069">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

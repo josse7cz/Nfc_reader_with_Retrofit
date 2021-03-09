@@ -29,19 +29,19 @@ public class NastaveniActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         // Create a list of padaky
-        ArrayList<Padak> padaky = new ArrayList<Padak>();
-        padaky.add(new Padak("Where are you going?", "minto wuksus"));
-        padaky.add(new Padak("What is your name?", "tinnә oyaase'nә"));
-        padaky.add(new Padak("My name is...", "oyaaset..."));
-        padaky.add(new Padak("How are you feeling?", "michәksәs?"));
-        padaky.add(new Padak("I’m feeling good.", "kuchi achit"));
-        padaky.add(new Padak("Are you coming?", "әәnәs'aa?"));
-        padaky.add(new Padak("Yes, I’m coming.", "hәә’ әәnәm"));
-        padaky.add(new Padak("I’m coming.", "әәnәm"));
-        padaky.add(new Padak("Let’s go.", "yoowutis"));
-        padaky.add(new Padak("Come here.", "әnni'nem"));
+        ArrayList<Transl> padaky = new ArrayList<Transl>();
+        padaky.add(new Transl("Where are you going?", "minto wuksus"));
+        padaky.add(new Transl("What is your name?", "tinnә oyaase'nә"));
+        padaky.add(new Transl("My name is...", "oyaaset..."));
+        padaky.add(new Transl("How are you feeling?", "michәksәs?"));
+        padaky.add(new Transl("I’m feeling good.", "kuchi achit"));
+        padaky.add(new Transl("Are you coming?", "әәnәs'aa?"));
+        padaky.add(new Transl("Yes, I’m coming.", "hәә’ әәnәm"));
+        padaky.add(new Transl("I’m coming.", "әәnәm"));
+        padaky.add(new Transl("Let’s go.", "yoowutis"));
+        padaky.add(new Transl("Come here.", "әnni'nem"));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Padak}s. The
+        // Create an {@link WordAdapter}, whose data source is a list of {@link Transl}s. The
         // adapter knows how to create list items for each item in the list.
         WordAdapter adapter = new WordAdapter(this, padaky, R.color.category_phrases);
 
@@ -51,7 +51,7 @@ public class NastaveniActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Padak} in the list.
+        // {@link ListView} will display list items for each {@link Transl} in the list.
         listView.setAdapter(adapter);
     }
 }
