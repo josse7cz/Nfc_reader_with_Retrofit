@@ -20,8 +20,10 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class NastaveniActivity extends AppCompatActivity {
+    PrijemActivity prijem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,21 +31,55 @@ public class NastaveniActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         // Create a list of padaky
-        ArrayList<Transl> padaky = new ArrayList<Transl>();
-        padaky.add(new Transl("Where are you going?", "minto wuksus"));
-        padaky.add(new Transl("What is your name?", "tinnә oyaase'nә"));
-        padaky.add(new Transl("My name is...", "oyaaset..."));
-        padaky.add(new Transl("How are you feeling?", "michәksәs?"));
-        padaky.add(new Transl("I’m feeling good.", "kuchi achit"));
-        padaky.add(new Transl("Are you coming?", "әәnәs'aa?"));
-        padaky.add(new Transl("Yes, I’m coming.", "hәә’ әәnәm"));
-        padaky.add(new Transl("I’m coming.", "әәnәm"));
-        padaky.add(new Transl("Let’s go.", "yoowutis"));
-        padaky.add(new Transl("Come here.", "әnni'nem"));
+
+      ArrayList<Padak> padaky = new ArrayList<Padak>();
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(124,"ovp80"));
+      padaky.add(new Padak(125,"ovp80"));
+      padaky.add(new Padak(126,"ovp80"));
+      padaky.add(new Padak(127,"ovp80"));
+      padaky.add(new Padak(128,"ovp80"));
+      padaky.add(new Padak(129,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+      padaky.add(new Padak(123,"ovp80"));
+
+
+
+   PadakAdapter adapter = new PadakAdapter(this,padaky);
+
+        //ArrayList<Transl> padaky = new ArrayList<Transl>();
+//        padaky.add(new Transl("Where are you going?", "minto wuksus"));
+//        padaky.add(new Transl("Where are you going?", "minto wuksus"));
+//        padaky.add(new Transl("What is your name?", "tinnә oyaase'nә"));
+//        padaky.add(new Transl("My name is...", "oyaaset..."));
+//        padaky.add(new Transl("How are you feeling?", "michәksәs?"));
+//        padaky.add(new Transl("I’m feeling good.", "kuchi achit"));
+//        padaky.add(new Transl("Are you coming?", "әәnәs'aa?"));
+//        padaky.add(new Transl("Yes, I’m coming.", "hәә’ әәnәm"));
+//        padaky.add(new Transl("I’m coming.", "әәnәm"));
+//        padaky.add(new Transl("Let’s go.", "yoowutis"));
+//        padaky.add(new Transl("Come here.", "әnni'nem"));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Transl}s. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter = new WordAdapter(this, padaky, R.color.category_phrases);
+        //WordAdapter adapter = new WordAdapter(this, padaky, R.color.category_phrases);
+
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the

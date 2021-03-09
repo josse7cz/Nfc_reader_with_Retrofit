@@ -32,11 +32,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+
+import static com.example.android.miwok.R.id.text_nfc_container;
 
 /**
  * třída pro načítání a zápis NFC
@@ -57,6 +61,9 @@ public class PrijemActivity extends AppCompatActivity {
     TextView nfc_contents;
     Button activateButton;
 
+
+
+
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +82,7 @@ public class PrijemActivity extends AppCompatActivity {
                     } else {
                         write("&:" + edit_message.getText().toString(), myTag);
                         Toast.makeText(context, "Write_Success", Toast.LENGTH_LONG).show();
+
                     }
                 } catch (IOException e) {
                     Toast.makeText(context, "Write_Error", Toast.LENGTH_LONG).show();
@@ -145,6 +153,7 @@ public class PrijemActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         nfc_contents.setText("Váš text: " + text);
+
     }
 
     @SuppressLint("MissingPermission")

@@ -45,6 +45,7 @@ public class Transl {
         mMiwokTranslation = miwokTranslation;
     }
 
+
     /**
      * Create a new Transl object.
      *
