@@ -9,21 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bffbbe2-5712-4b2e-8156-9e777ffb19d9" name="Default Changelist" comment="ok">
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/NastaveniActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/NastaveniActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/Padak.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/Padak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PrijemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PrijemActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/nfc_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nfc_layout.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0bffbbe2-5712-4b2e-8156-9e777ffb19d9" name="Default Changelist" comment="ok" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,15 +63,15 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\J\MiwokFromGit\app\src\main\res\values" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\J\MiwokFromGit\app" />
+      <recent name="D:\J\MiwokFromGit\app\src\main\res\xml" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.android.miwok" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\J\MiwokFromGit\app" />
-      <recent name="D:\J\MiwokFromGit\app\src\main\res\xml" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\J\MiwokFromGit\app\src\main\res\values" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -208,9 +194,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="654" y="295" key="#Notifications/0.0.1536.864@0.0.1536.864" timestamp="1614947153783" />
-    <state x="484" y="19" key="#app" timestamp="1614947130021">
+    <state x="484" y="19" key="#app" timestamp="1615316794680">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="484" y="19" key="#app/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1615316794680" />
     <state x="484" y="19" key="#app/0.0.1536.864@0.0.1536.864" timestamp="1614947130021" />
     <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1615301935930">
       <screen x="0" y="0" width="1536" height="864" />
