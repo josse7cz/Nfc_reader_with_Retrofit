@@ -61,9 +61,6 @@ public class PrijemActivity extends AppCompatActivity {
     TextView nfc_contents;
     Button activateButton;
 
-
-
-
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {

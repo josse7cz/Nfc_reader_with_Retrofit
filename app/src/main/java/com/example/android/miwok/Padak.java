@@ -1,8 +1,6 @@
 package com.example.android.miwok;
 
 
-import com.google.gson.annotations.SerializedName;
-
 public class Padak {
 
 

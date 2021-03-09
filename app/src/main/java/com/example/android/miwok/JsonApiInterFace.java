@@ -32,11 +32,6 @@ public interface JsonApiInterFace {
     @GET("posts")
     Call<List<Post>> getPosts(@QueryMap Map<String, String> parameters);
 
-    @GET("posts/{id}/comments")
-    Call<List<Comment>> getComments(@Path("id") int postId);
-
-    @GET
-    Call<List<Comment>> getComments(@Url String url);
 
     @POST("posts")
     Call<Post> createPost(@Body Post post);
