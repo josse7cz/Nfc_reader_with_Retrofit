@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link PrijemActivity}
-                Intent numbersIntent = new Intent(MainActivity.this, PrijemActivity.class);
+                // Create a new intent to open the {@link NactiNFCActivity}
+                Intent numbersIntent = new Intent(MainActivity.this, NactiNFCActivity.class);
 
                 // Start the new activity
                 startActivity(numbersIntent);
@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the family category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link VydejActivity}
-                Intent familyIntent = new Intent(MainActivity.this, VydejActivity.class);
+                // Create a new intent to open the {@link NastavNFCActivity}
+                Intent familyIntent = new Intent(MainActivity.this, NastavNFCActivity.class);
 
                 // Start the new activity
                 startActivity(familyIntent);
@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the colors category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link EvidenceActivity}
-                Intent colorsIntent = new Intent(MainActivity.this, EvidenceActivity.class);
+                // Create a new intent to open the {@link DiskuzeActivity}
+                Intent colorsIntent = new Intent(MainActivity.this, DiskuzeActivity.class);
 
                 // Start the new activity
                 startActivity(colorsIntent);

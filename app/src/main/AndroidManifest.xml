@@ -46,15 +46,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PrijemActivity"
+            android:name=".NactiNFCActivity"
             android:label="@string/category_prijem"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".VydejActivity"
+            android:name=".NastavNFCActivity"
             android:label="@string/category_vydej"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".EvidenceActivity"
+            android:name=".DiskuzeActivity"
             android:label="@string/category_evidence"
             android:parentActivityName=".MainActivity" />
         <activity

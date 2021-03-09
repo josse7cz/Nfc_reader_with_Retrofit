@@ -14,7 +14,7 @@
 -->
 <resources>
     <!-- Title for the application. [CHAR LIMIT=12] -->
-    <string name="app_name">Sklad padáků</string>
+    <string name="app_name">Sklad</string>
 
     <!-- Category name přehled [CHAR LIMIT=20] -->
     <string name="category_nastaveni">Přehled</string>
@@ -23,9 +23,9 @@
     <string name="category_evidence">Diskuze</string>
 
     <!-- Category name for the padaky výdej [CHAR LIMIT=20] -->
-    <string name="category_vydej">Výdej padáků</string>
+    <string name="category_vydej">Nastav čip NFC</string>
 
     <!-- Category name for the padaky prijem [CHAR LIMIT=20] -->
-    <string name="category_prijem">Příjem padáků</string>
+    <string name="category_prijem">Načti čip NFC</string>
 
 </resources>

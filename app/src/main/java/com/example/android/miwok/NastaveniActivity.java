@@ -20,10 +20,9 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class NastaveniActivity extends AppCompatActivity {
-    PrijemActivity prijem;
+    NactiNFCActivity prijem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
