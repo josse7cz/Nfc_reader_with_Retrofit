@@ -92,22 +92,21 @@ public class VydejActivity extends AppCompatActivity {
         nfcAdapter = NfcAdapter.getDefaultAdapter(context);
 
 
-        if (!nfcAdapter.isEnabled()) {
+        if (nfcAdapter == null) {
+            Toast.makeText(context, "This device not supported NFC", Toast.LENGTH_LONG).show();
+            finish();
+        } else if (!nfcAdapter.isEnabled()) {
             Toast.makeText(context, "This device not enable NFC", Toast.LENGTH_LONG).show();
             finish();
         }
 
-        if (nfcAdapter == null) {
-            Toast.makeText(context, "This device not supported NFC", Toast.LENGTH_LONG).show();
-            finish();
+        if (nfcAdapter != null&&nfcAdapter.isEnabled()) {
+            readfromIntent(getIntent());
+            pendingIntent = PendingIntent.getActivity(this, 0, new Intent(this, getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
+            IntentFilter tagDetected = new IntentFilter(NfcAdapter.ACTION_TAG_DISCOVERED);
+            tagDetected.addCategory(Intent.CATEGORY_DEFAULT);
+            writeTagFilters = new IntentFilter[]{tagDetected};
         }
-
-
-        readfromIntent(getIntent());
-        pendingIntent = PendingIntent.getActivity(this, 0, new Intent(this, getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
-        IntentFilter tagDetected = new IntentFilter(NfcAdapter.ACTION_TAG_DISCOVERED);
-        tagDetected.addCategory(Intent.CATEGORY_DEFAULT);
-        writeTagFilters = new IntentFilter[]{tagDetected};
 
     }
 
