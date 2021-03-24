@@ -23,9 +23,9 @@
     <string name="category_evidence">Diskuze</string>
 
     <!-- Category name for the padaky výdej [CHAR LIMIT=20] -->
-    <string name="category_vydej">Výdej padáků</string>
+    <string name="category_vydej">Nastav NFC</string>
 
     <!-- Category name for the padaky prijem [CHAR LIMIT=20] -->
-    <string name="category_prijem">Příjem padáků</string>
+    <string name="category_prijem">Načíst NFC</string>
 
 </resources>

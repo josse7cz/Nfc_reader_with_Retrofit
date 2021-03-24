@@ -46,11 +46,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.android.sklad.PrijemActivity"
+            android:name="com.example.android.sklad.NactiNFC"
             android:label="@string/category_prijem"
             android:parentActivityName="com.example.android.sklad.MainActivity" />
         <activity
-            android:name="com.example.android.sklad.VydejActivity"
+            android:name="com.example.android.sklad.NastavNFC"
             android:label="@string/category_vydej"
             android:parentActivityName="com.example.android.sklad.MainActivity" />
         <activity

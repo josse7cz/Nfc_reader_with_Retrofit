@@ -22,7 +22,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class NastaveniActivity extends AppCompatActivity {
-    PrijemActivity prijem;
+    NactiNFC prijem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

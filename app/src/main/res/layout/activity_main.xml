@@ -25,27 +25,27 @@ tools:context="com.example.android.sklad.MainActivity"
     android:weightSum="4"
     >
     <TextView
-        android:id="@+id/numbers"
+        android:id="@+id/nacti_NFC"
         style="@style/CategoryStyle"
-        android:background="@color/category_numbers"
+        android:background="@color/category_nacti_NFC"
         android:text="@string/category_prijem" />
 
     <TextView
-        android:id="@+id/family"
+        android:id="@+id/nastav_NFC"
         style="@style/CategoryStyle"
-        android:background="@color/category_family"
+        android:background="@color/category_nastav_NFC"
         android:text="@string/category_vydej" />
 
     <TextView
-        android:id="@+id/colors"
+        android:id="@+id/diskuze"
         style="@style/CategoryStyle"
-        android:background="@color/category_colors"
+        android:background="@color/category_diskuze"
         android:text="@string/category_evidence" />
 
     <TextView
-        android:id="@+id/phrases"
+        android:id="@+id/prehled"
         style="@style/CategoryStyle"
-        android:background="@color/category_phrases"
+        android:background="@color/category_prehled"
         android:text="@string/category_nastaveni" />
 
 </LinearLayout>

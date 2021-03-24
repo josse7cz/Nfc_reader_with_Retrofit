@@ -42,7 +42,7 @@ import java.util.ArrayList;
 /**
  * třída pro načítání a zápis NFC
  */
-public class PrijemActivity extends AppCompatActivity {
+public class NactiNFC extends AppCompatActivity {
     public static final String Error_Detected = "No NFC Tag Detected";
     public static final String Write_Success = "Text written successfully!";
     public static final String Write_Error = "Error during writing try again";

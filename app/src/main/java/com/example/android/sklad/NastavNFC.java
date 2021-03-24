@@ -41,7 +41,7 @@ import java.io.UnsupportedEncodingException;
 /**
  * třída pro načítání a zápis NFC
  */
-public class VydejActivity extends AppCompatActivity {
+public class NastavNFC extends AppCompatActivity {
     public static final String Error_Detected = "No NFC Tag Detected";
     public static final String Write_Success = "Text written successfully!";
     public static final String Write_Error = "Error during writing try again";
@@ -100,7 +100,7 @@ public class VydejActivity extends AppCompatActivity {
             finish();
         }
 
-        if (nfcAdapter != null&&nfcAdapter.isEnabled()) {
+        if (nfcAdapter != null && nfcAdapter.isEnabled()) {
             readfromIntent(getIntent());
             pendingIntent = PendingIntent.getActivity(this, 0, new Intent(this, getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
             IntentFilter tagDetected = new IntentFilter(NfcAdapter.ACTION_TAG_DISCOVERED);
@@ -109,6 +109,11 @@ public class VydejActivity extends AppCompatActivity {
         }
 
     }
+
+    /**
+     * metoda pro nacteni pres Intent
+     * @param intent
+     */
 
     public void readfromIntent(Intent intent) {
 
@@ -219,30 +224,3 @@ public class VydejActivity extends AppCompatActivity {
     }
 
 }
-
-
-//        // Create a list of padaky
-//        ArrayList<Transl> padaky = new ArrayList<Transl>();
-//        padaky.add(new Transl("father", "әpә", R.drawable.family_father));
-//        padaky.add(new Transl("mother", "әṭa", R.drawable.family_mother));
-//        padaky.add(new Transl("son", "angsi", R.drawable.family_son));
-//        padaky.add(new Transl("daughter", "tune", R.drawable.family_daughter));
-//        padaky.add(new Transl("older brother", "taachi", R.drawable.family_older_brother));
-//        padaky.add(new Transl("younger brother", "chalitti", R.drawable.family_younger_brother));
-//        padaky.add(new Transl("older sister", "teṭe", R.drawable.family_older_sister));
-//        padaky.add(new Transl("younger sister", "kolliti", R.drawable.family_younger_sister));
-//        padaky.add(new Transl("grandmother ", "ama", R.drawable.family_grandmother));
-//        padaky.add(new Transl("grandfather", "paapa", R.drawable.family_grandfather));
-//
-//        // Create an {@link WordAdapter}, whose data source is a list of {@link Transl}s. The
-//        // adapter knows how to create list items for each item in the list.
-//        WordAdapter adapter = new WordAdapter(this, padaky, R.color.category_family);
-//
-//        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-//        // There should be a {@link ListView} with the view ID called list, which is declared in the
-//        // word_list.xml layout file.
-//        ListView listView = (ListView) findViewById(R.id.list);
-//
-//        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-//        // {@link ListView} will display list items for each {@link Transl} in the list.
-//        listView.setAdapter(adapter);
