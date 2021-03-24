@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.example.android.sklad;
 
 import android.content.Context;
 import android.view.LayoutInflater;

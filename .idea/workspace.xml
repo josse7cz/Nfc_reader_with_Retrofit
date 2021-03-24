@@ -10,26 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bffbbe2-5712-4b2e-8156-9e777ffb19d9" name="Default Changelist" comment="ok">
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Nfc_reader_with_Retrofit.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Nfc_reader_with_Retrofit.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PrijemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PrijemActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/VydejActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/VydejActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/EvidenceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sklad/EvidenceActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/JsonApiInterFace.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sklad/JsonApiInterFace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sklad/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/NastaveniActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sklad/NastaveniActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/Padak.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sklad/Padak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PadakAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sklad/PadakAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sklad/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PostAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sklad/PostAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PrijemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sklad/PrijemActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/VydejActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sklad/VydejActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_5_API_28]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -254,22 +255,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="176" y="174" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1615186927497" />
-    <state width="1491" height="229" key="GridCell.Tab.0.bottom" timestamp="1616433158827">
+    <state width="1491" height="229" key="GridCell.Tab.0.bottom" timestamp="1616433690389">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="229" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1616433158827" />
-    <state width="1491" height="229" key="GridCell.Tab.0.center" timestamp="1616433158827">
+    <state width="1491" height="229" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1616433690389" />
+    <state width="1491" height="229" key="GridCell.Tab.0.center" timestamp="1616433690389">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="229" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1616433158827" />
-    <state width="1491" height="229" key="GridCell.Tab.0.left" timestamp="1616433158826">
+    <state width="1491" height="229" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1616433690389" />
+    <state width="1491" height="229" key="GridCell.Tab.0.left" timestamp="1616433690389">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="229" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1616433158826" />
-    <state width="1491" height="229" key="GridCell.Tab.0.right" timestamp="1616433158827">
+    <state width="1491" height="229" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1616433690389" />
+    <state width="1491" height="229" key="GridCell.Tab.0.right" timestamp="1616433690389">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="229" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1616433158827" />
+    <state width="1491" height="229" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1616433690389" />
     <state width="1491" height="152" key="GridCell.Tab.1.bottom" timestamp="1615024116069">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

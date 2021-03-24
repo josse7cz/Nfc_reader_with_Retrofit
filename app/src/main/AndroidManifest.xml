@@ -13,7 +13,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.miwok">
+    package="com.example.android.sklad">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -30,7 +30,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.android.sklad.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -46,21 +46,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PrijemActivity"
+            android:name="com.example.android.sklad.PrijemActivity"
             android:label="@string/category_prijem"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName="com.example.android.sklad.MainActivity" />
         <activity
-            android:name=".VydejActivity"
+            android:name="com.example.android.sklad.VydejActivity"
             android:label="@string/category_vydej"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName="com.example.android.sklad.MainActivity" />
         <activity
-            android:name=".EvidenceActivity"
+            android:name="com.example.android.sklad.EvidenceActivity"
             android:label="@string/category_evidence"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName="com.example.android.sklad.MainActivity" />
         <activity
-            android:name=".NastaveniActivity"
+            android:name="com.example.android.sklad.NastaveniActivity"
             android:label="@string/category_nastaveni"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName="com.example.android.sklad.MainActivity" />
     </application>
 
 </manifest>

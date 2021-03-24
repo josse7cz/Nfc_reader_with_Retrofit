@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.example.android.sklad;
 
 import java.util.List;
 import java.util.Map;
@@ -16,7 +16,6 @@ import retrofit2.http.PUT;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 import retrofit2.http.QueryMap;
-import retrofit2.http.Url;
 
 public interface JsonApiInterFace {
     @GET("posts")

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.miwok;
+package com.example.android.sklad;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -52,16 +52,13 @@ public class EvidenceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
-        //textViewResult = (TextView) findViewById(R.id.tvHome);
-
 
         Gson gson = new GsonBuilder().serializeNulls().create();
-
         HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
         loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient okHttpClient = new OkHttpClient.Builder().addInterceptor(loggingInterceptor).build();
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://my-json-server.typicode.com/josse7cz/demo/")//("https://jsonplaceholder.typicode.com/")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://jsonplaceholder.typicode.com/")//("https://my-json-server.typicode.com/josse7cz/demo/")//
                 .addConverterFactory(GsonConverterFactory.create(gson)).client(okHttpClient).build();
         jsonApiInterFace = retrofit.create(JsonApiInterFace.class);
         getPosts(null, null);
