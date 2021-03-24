@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_nfc_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editNFC"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="Zadejte text." />
+
+
+    <TextView
+        android:id="@+id/readNFCSet"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text=""
+        android:textSize="28dp" />
+
+    <Button
+        android:id="@+id/ActivateButton"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:text="Zapiš text na TAG" />
+</LinearLayout>

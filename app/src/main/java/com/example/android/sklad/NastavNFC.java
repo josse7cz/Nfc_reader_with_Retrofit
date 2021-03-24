@@ -61,9 +61,9 @@ public class NastavNFC extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nfc_layout);
+        setContentView(R.layout.nfc_layout_set);
         edit_message = (TextView) findViewById(R.id.editNFC);
-        nfc_contents = (TextView) findViewById(R.id.readNFC);
+        nfc_contents = (TextView) findViewById(R.id.readNFCSet);
         activateButton = (Button) findViewById(R.id.ActivateButton);
         context = this;
         activateButton.setOnClickListener(new View.OnClickListener() {

@@ -39,7 +39,7 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="#0B0909"
             android:textStyle="bold"
-            tools:text="lutti" />
+            tools:text="one" />
 
         <TextView
             android:id="@+id/b"
@@ -49,7 +49,7 @@
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="#050404"
-            tools:text="one" />
+            tools:text="two" />
 
     </LinearLayout>
 </LinearLayout>

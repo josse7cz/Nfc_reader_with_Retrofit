@@ -5,12 +5,12 @@
     android:layout_height="match_parent"
     >
 
-    <EditText
-        android:id="@+id/editNFC"
+    <TextView
+        android:id="@+id/readNFC"
         android:layout_width="match_parent"
         android:layout_height="58dp"
-        android:text="Zde zadejte text."
-        />
+        android:textSize="28dp"
+        android:text="" />
 
     <Switch
         android:id="@+id/switch1"
@@ -21,19 +21,8 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingRight="6dp"
         android:gravity="right"
-        android:text="zabaleno" />
+        android:text="přijmout" />
 
-    <TextView
-        android:id="@+id/readNFC"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:textSize="28dp"
-        android:text="" />
-
-    <Button
-        android:id="@+id/ActivateButton"
-        android:layout_width="match_parent"
-        android:layout_height="78dp"
-        android:text="Zapsat text" />
 </LinearLayout>

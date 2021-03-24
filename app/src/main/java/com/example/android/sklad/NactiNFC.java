@@ -30,7 +30,6 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -65,29 +64,29 @@ public class NactiNFC extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nfc_layout);
-        edit_message = (TextView) findViewById(R.id.editNFC);
+    //    edit_message = (TextView) findViewById(R.id.editNFC);
         nfc_contents = (TextView) findViewById(R.id.readNFC);
-        activateButton = (Button) findViewById(R.id.ActivateButton);
+      //  activateButton = (Button) findViewById(R.id.ActivateButton);
         context = this;
-        activateButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    if (myTag == null) {
-                        Toast.makeText(context, "Error_Detected", Toast.LENGTH_LONG).show();
-                    } else {
-                        write("" + edit_message.getText().toString(), myTag);
-                        Toast.makeText(context, "Write_Success", Toast.LENGTH_LONG).show();
-                    }
-                } catch (IOException e) {
-                    Toast.makeText(context, "Write_Error", Toast.LENGTH_LONG).show();
-                    e.printStackTrace();
-                } catch (FormatException e) {
-                    Toast.makeText(context, "Write_Error", Toast.LENGTH_LONG).show();
-                    e.printStackTrace();
-                }
-            }
-        });
+//        activateButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                try {
+//                    if (myTag == null) {
+//                        Toast.makeText(context, "Error_Detected", Toast.LENGTH_LONG).show();
+//                    } else {
+//                        write("" + edit_message.getText().toString(), myTag);
+//                        Toast.makeText(context, "Write_Success", Toast.LENGTH_LONG).show();
+//                    }
+//                } catch (IOException e) {
+//                    Toast.makeText(context, "Write_Error", Toast.LENGTH_LONG).show();
+//                    e.printStackTrace();
+//                } catch (FormatException e) {
+//                    Toast.makeText(context, "Write_Error", Toast.LENGTH_LONG).show();
+//                    e.printStackTrace();
+//                }
+//            }
+//        });
 
         /**
          * zjisteni zda zarizeni podporuje NFC
@@ -226,30 +225,3 @@ public class NactiNFC extends AppCompatActivity {
 
 
 }
-
-
-//        // Create a list of padaky
-//        ArrayList<Transl> padaky = new ArrayList<Transl>();
-//        padaky.add(new Transl("father", "әpә", R.drawable.family_father));
-//        padaky.add(new Transl("mother", "әṭa", R.drawable.family_mother));
-//        padaky.add(new Transl("son", "angsi", R.drawable.family_son));
-//        padaky.add(new Transl("daughter", "tune", R.drawable.family_daughter));
-//        padaky.add(new Transl("older brother", "taachi", R.drawable.family_older_brother));
-//        padaky.add(new Transl("younger brother", "chalitti", R.drawable.family_younger_brother));
-//        padaky.add(new Transl("older sister", "teṭe", R.drawable.family_older_sister));
-//        padaky.add(new Transl("younger sister", "kolliti", R.drawable.family_younger_sister));
-//        padaky.add(new Transl("grandmother ", "ama", R.drawable.family_grandmother));
-//        padaky.add(new Transl("grandfather", "paapa", R.drawable.family_grandfather));
-//
-//        // Create an {@link WordAdapter}, whose data source is a list of {@link Transl}s. The
-//        // adapter knows how to create list items for each item in the list.
-//        WordAdapter adapter = new WordAdapter(this, padaky, R.color.category_family);
-//
-//        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-//        // There should be a {@link ListView} with the view ID called list, which is declared in the
-//        // word_list.xml layout file.
-//        ListView listView = (ListView) findViewById(R.id.list);
-//
-//        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-//        // {@link ListView} will display list items for each {@link Transl} in the list.
-//        listView.setAdapter(adapter);
