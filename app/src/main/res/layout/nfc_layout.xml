@@ -12,17 +12,14 @@
         android:textSize="28dp"
         android:text="" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
         android:gravity="right"
-        android:text="přijmout" />
+        android:text="Přiložte prosím čip.
+" />
 
 </LinearLayout>
