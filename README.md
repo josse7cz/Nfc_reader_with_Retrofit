@@ -1,3 +1,7 @@
+ToDO
+===============================
+Doprogramovat napojení na web app cloud service např. https://firebase.google.com/
+
 App
 ===================================
 
